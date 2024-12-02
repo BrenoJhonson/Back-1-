@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.vendedorRoutes = void 0;
+const express_1 = require("express");
+const VendedorController_1 = require("../controllers/VendedorController");
+exports.vendedorRoutes = (0, express_1.Router)();
+exports.vendedorRoutes.get('/vendedores', VendedorController_1.VendedorController.listarVendedores);
+exports.vendedorRoutes.post('/vendedores', VendedorController_1.VendedorController.criarVendedor);
+exports.vendedorRoutes.put('/vendedores/:id', VendedorController_1.VendedorController.atualizarVendedor);
+exports.vendedorRoutes.delete('/vendedores/:id', VendedorController_1.VendedorController.excluirVendedor);

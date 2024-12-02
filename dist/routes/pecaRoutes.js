@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.pecaRoutes = void 0;
+const express_1 = require("express");
+const PecaController_1 = require("../controllers/PecaController");
+exports.pecaRoutes = (0, express_1.Router)();
+exports.pecaRoutes.get('/pecas', PecaController_1.PecaController.listarPecas);
+exports.pecaRoutes.post('/pecas', PecaController_1.PecaController.criarPeca);
+exports.pecaRoutes.put('/pecas/:id', PecaController_1.PecaController.atualizarPeca);
+exports.pecaRoutes.delete('/pecas/:id', PecaController_1.PecaController.excluirPeca);

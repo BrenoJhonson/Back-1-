@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs", 
+    "target": "ES6",           
+    "baseUrl": "./",           
+    "paths": {
+      "*": ["node_modules/*", "src/*"]  
+    },
+    "outDir": "./dist",        
+    "esModuleInterop": true,    
+    "skipLibCheck": true,      
+    "forceConsistentCasingInFileNames": true,  
+    "strict": true,              
+    "resolveJsonModule": true,  
+    "noImplicitAny": true,    
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*", "app.ts"],    
+  "exclude": ["node_modules"] 
+}
+
