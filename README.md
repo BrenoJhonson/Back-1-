@@ -130,27 +130,25 @@ O servidor será iniciado em http://localhost:3003.
 
 ## Estrutura de Diretórios
     ```bash
-    .
-├── controllers/            # Lógica de controle para as rotas
-│   ├── ClienteController.ts
-│   ├── VendedorController.ts
-│   └── PecaController.ts
-├── models/                 # Definição dos modelos e tabelas
-│   ├── Cliente.ts
-│   ├── Vendedor.ts
-│   └── Peca.ts
-├── services/               # Lógica de interação com o banco de dados
-│   ├── ClienteService.ts
-│   ├── VendedorService.ts
-│   └── PecaService.ts
-├── routes/                 # Definição das rotas da API
-│   ├── clienteRoutes.ts
-│   ├── vendedorRoutes.ts
-│   └── pecaRoutes.ts
-├── END/                    # Configuração do banco de dados
-│   └── connection.ts
-├── .env                    # Variáveis de ambiente (não compartilhe este arquivo)
-├── package.json            # Dependências e scripts do projeto
-├── tsconfig.json           # Configurações do TypeScript
-└── README.md               # Este arquivo
-
+    ├── controllers/            # Lógica de controle para as rotas
+    │   ├── ClienteController.ts
+    │   ├── VendedorController.ts
+    │   └── PecaController.ts
+    ├── models/                 # Definição dos modelos e tabelas
+    │   ├── Cliente.ts
+    │   ├── Vendedor.ts
+    │   └── Peca.ts
+    ├── services/               # Lógica de interação com o banco de dados
+    │   ├── ClienteService.ts
+    │   ├── VendedorService.ts
+    │   └── PecaService.ts
+    ├── routes/                 # Definição das rotas da API
+    │   ├── clienteRoutes.ts
+    │   ├── vendedorRoutes.ts
+    │   └── pecaRoutes.ts
+    ├── END/                    # Configuração do banco de dados
+    │   └── connection.ts
+    ├── .env                    # Variáveis de ambiente (não compartilhe este arquivo)
+    ├── package.json            # Dependências e scripts do projeto
+    ├── tsconfig.json           # Configurações do TypeScript
+    └── README.md               # Este arquivo
